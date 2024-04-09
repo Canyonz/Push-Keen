@@ -1,0 +1,30 @@
+.card
+  position: relative
+  display: flex
+  flex-direction: column
+  gap: 15px
+  padding: 15px 25px
+  border-radius: 25px
+  box-shadow: 0px 0px 45.9px 0px #00000040
+  backdrop-filter: blur(5px)
+  transition: background 0.33s, box-shadow 0.33s
+
+  &.card_active
+    box-shadow: 0 0 45.9px 0 #FF2F54
+
+  &:hover
+    background-color: #fff
+
+  &_title
+    overflow: hidden
+    white-space: nowrap
+    text-overflow: ellipsis
+
+  &_text
+    flex: 1
+
+.cardWrapper
+  background: none
+  border: none
+  outline: none
+  cursor: pointer
